@@ -96,7 +96,7 @@ form {
     bottom: 350px;
     left: 370px;
     height: 54vh;
-    display: none;
+    /* display: none; */
 }
 
 .info i{
@@ -162,12 +162,17 @@ form {
     width: 100px;
     display: flex;
     flex-direction: column;
-    padding: 15px 10px;
+    /* padding: 15px 10px; */
     box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
     border: 1px solid #4453d3;
-    border-radius: 4px;
+    border-radius: 6px;
     margin: 15px 0;
-    justify-content: left;
+    /* justify-content: left; */
+    /* display: none; */
+}
+
+.arcade :hover{
+    color: #0d11f0;
 }
 
 .arcade p{
@@ -185,53 +190,75 @@ form {
     position: relative;
     justify-content: center;
     text-align: center;
+    color: #4453d3;
 }
 
 .box{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     width: 0;
     justify-content: space-evenly;
     width: 500px;
     cursor: pointer;
 }
 
-.box .arcade{
-    height: 15vh;
-    justify-content: space-between;
-}
+/* .box .arcade{
+    height: 1vh;
+    justify-content: space-around;
+} */
 
 .plan{
     position: relative;
-    top: 6rem;
+    top: -290px;
+    bottom: 95px;
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
     padding-left: 14rem;
     background-color: #f2f2f2;
-    border: 1px solid #ccc;
+    border: 1px solid #0c25ff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(158, 122, 122, 0.1);
-    height: 65vh;
-    justify-content: center;
+    height: 60vh;
+    /* justify-content: center; */
     /* display: none; */
+}
+
+.info {
+    position: relative;
+    top: 135px;
+    left: 345px;
+    z-index: 1;   
+}
+
+.btn{
+    display: contents;
+    
 }
 
 .plan h4{
     position: relative;
     left: 25px;
+    top: 25px;
 }
 
-.plan p{
+#pll{
+    position: relative;
+    top: 25px;
+
+}
+
+/* .plan{
     position: relative;
     right: 5rem;
-}
+    top: 25px;
+} */
 
 .switch{
-    /* position: relative;
+    position: relative;
     top: 250px;
     right: 250px;
-    /* width: 35px; */
+    width: 35px;
     display: flex;
     flex-direction: row;
     
@@ -241,16 +268,40 @@ form {
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    top: 200px;
-    right: 100px;
+    top: -75px;
+    left: -16px;
+    color: #f2f2f2;
+    background-color: #007BFF;
+    height: 30px;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.switch p i{
+    position: relative;
+    top: 1px;
+    padding: 4px;
 }
 
 .switch h4{
     position: relative;
-    right: 250px;
-    top: 155px;
+    top: -40px;
+    /* bottom: 250px; */
+    left: -108px;
     display: flex;
     flex-direction: row;
+    font-weight:bold ;
+    height: 30px;
+    padding: 6px;
+    border-radius: 6px;
+    color: #f2f2f2;
+    background-color: #f50f07;
+}
+
+.switch h4 i{
+    position: relative;
+    top: 1px;
+    padding: 4px;
 }
 
 /* .box .arcade{
