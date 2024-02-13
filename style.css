@@ -190,16 +190,67 @@ form {
 .box{
     display: flex;
     flex-direction: row;
-    width: 20;
-    justify-content: space-around;
-    width: 600px;
+    width: 0;
+    justify-content: space-evenly;
+    width: 500px;
     cursor: pointer;
 }
 
-.box .switch{
+.box .arcade{
+    height: 15vh;
+    justify-content: space-between;
+}
+
+.plan{
     position: relative;
+    top: 6rem;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-left: 14rem;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(158, 122, 122, 0.1);
+    height: 65vh;
+    justify-content: center;
+    /* display: none; */
+}
+
+.plan h4{
+    position: relative;
+    left: 25px;
+}
+
+.plan p{
+    position: relative;
+    right: 5rem;
+}
+
+.switch{
+    /* position: relative;
     top: 250px;
-    width: 25px;
+    right: 250px;
+    /* width: 35px; */
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.switch p{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 200px;
+    right: 100px;
+}
+
+.switch h4{
+    position: relative;
+    right: 250px;
+    top: 155px;
+    display: flex;
+    flex-direction: row;
 }
 
 /* .box .arcade{
