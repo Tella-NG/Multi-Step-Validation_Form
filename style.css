@@ -1,0 +1,212 @@
+/* PAGE 1 */
+
+/* Style for the form */
+
+*{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h4{
+    font-weight: lighter;
+}
+
+h3{
+    font-weight: lighter;
+    margin-top: 0;
+    color: #ccc;
+    font-size: small;
+}
+
+p{
+    font-weight: bolder;
+    margin: 0px;
+    margin-bottom: 4px;  
+    position: relative;
+    bottom: 19px;
+    left: 26px;
+    /* margin-bottom: 10px; */
+}
+
+form {
+    position: relative;
+    top: 6rem;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-left: 14rem;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 65vh;
+    justify-content: center;
+    display: none;
+  }
+  
+  /* Style for labels and input fields */
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style for Next button */
+  .btn {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    left: 295px;
+    padding: 10px 10px;
+    width: 22%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[ type="number"]
+  {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+ }  
+
+
+ /* INFO PAGE  */
+.info {
+    color: #fff;
+    width: 150px;
+    background-color: #ccc;
+    border-radius: 7px;
+    padding: 15px;
+    background-image: url(multi-step-form-main/assets/images/bg-sidebar-desktop.svg);
+    background-size: 190px;
+    background-repeat: no-repeat;
+    height: 50vh;
+    position: relative;
+    bottom: 350px;
+    left: 370px;
+    height: 54vh;
+    display: none;
+}
+
+.info i{
+    font-size: 15px;
+    color: rgb(247, 248, 239);
+    position: relative;
+    top: 15px;
+    right: 7px;
+    /* font-weight: bold; */
+    background-color: #f50792;
+    border-radius: 50% ;
+    border:rgb(240, 14, 100);
+    outline: 2px seashell;
+    padding: 5px;
+    /* font-size: 15px; */
+    cursor: pointer;
+}
+
+.info i:hover{
+    background-color: #3bf70c;
+}
+
+/* Alternatives for paragraph  */
+.one p{
+    margin: 0px;
+    margin-bottom: 4px;  
+    position: relative;
+    bottom: 19px; 
+    font-size: small;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+}
+
+.one h3 i{
+    background-color: #3bf70c;
+}
+
+.two p{
+    margin: 0px;
+    margin-bottom: 5px;
+    position: relative;
+    bottom: 19px;
+    font-size: small; 
+}
+
+.three p{
+    margin: 0px;
+    margin-bottom: 5px;
+    position: relative;
+    bottom: 19px;
+    font-size: small;
+}
+
+.four p{
+    margin: 0px;
+    margin-bottom: 5px;
+    position: relative;
+    bottom: 19px; 
+    font-size: small;
+}
+
+/* PAGE 2  */
+
+.arcade{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+    border: 1px solid #4453d3;
+    border-radius: 4px;
+    margin: 15px 0;
+    justify-content: left;
+}
+
+.arcade p{
+    position: relative;
+    top: 2px;
+    right: 599px;
+}
+
+.arcade i{
+    position: relative;
+    left: 41px;
+}
+
+.arcade h3{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    width: 20;
+    justify-content: space-around;
+    width: 600px;
+    cursor: pointer;
+}
+
+.box .switch{
+    position: relative;
+    top: 250px;
+    width: 25px;
+}
+
+/* .box .arcade{
+    /* width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+    border: 1px solid #73a24e;
+    border-radius: 4px;
+    margin: 15px 0; */
