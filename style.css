@@ -2,6 +2,8 @@
 
 /* Style for the form */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 *{
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -69,6 +71,7 @@ form {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    z-index: -1;
   }
 
   input[ type="number"]
@@ -105,11 +108,8 @@ form {
     position: relative;
     top: 15px;
     right: 7px;
-    /* font-weight: bold; */
     background-color: #f50792;
-    border-radius: 50% ;
-    border:rgb(240, 14, 100);
-    outline: 2px seashell;
+    border-radius: 5px;
     padding: 5px;
     /* font-size: 15px; */
     cursor: pointer;
@@ -156,7 +156,9 @@ form {
     font-size: small;
 }
 
+
 /* PAGE 2  */
+
 
 .arcade{
     width: 100px;
@@ -168,7 +170,8 @@ form {
     border-radius: 6px;
     margin: 15px 0;
     /* justify-content: left; */
-    /* display: none; */
+    /* hide */
+    display: none;
 }
 
 .arcade :hover{
@@ -179,6 +182,7 @@ form {
     position: relative;
     top: 2px;
     right: 599px;
+    
 }
 
 .arcade i{
@@ -200,6 +204,8 @@ form {
     justify-content: space-evenly;
     width: 500px;
     cursor: pointer;
+    /* hide  */
+    display: none;
 }
 
 /* .box .arcade{
@@ -240,12 +246,15 @@ form {
     position: relative;
     left: 25px;
     top: 25px;
+    /* hide  */
+    display: none;
 }
 
 #pll{
     position: relative;
     top: 25px;
-
+    /* hide  */
+    display: none;
 }
 
 /* .plan{
@@ -312,3 +321,231 @@ form {
     border: 1px solid #73a24e;
     border-radius: 4px;
     margin: 15px 0; */
+
+
+    /* end of page 2  */
+
+    /* page 3  */
+
+    .page3{
+        /* hide page 3  */
+        display: none;
+    }
+
+    .head3{
+        position: relative;
+        bottom: 680px;
+        left: 550px;
+    }
+
+    .head3 p{
+        position: relative;
+        left: -1px;
+    }
+
+    .head3 h4{
+        position: relative;
+        top: -30px;
+    }
+
+    .pick{
+        position: relative;
+        bottom: 700px;
+        left: 550px;
+        display: flex;
+        max-width: 355px;
+        background-color: #d5d6db;
+        border-radius: 7px;
+        border: 1px solid blue;
+    }
+
+    .picks .pick{
+        margin-bottom: 15px;
+    }
+
+    .pick p{
+        position: relative;
+        top: 10px;
+    }
+
+    .pick h3{
+        position: relative;
+        right: 80px;
+        top: 29px;
+        color: black;
+    }
+
+    .pick h4{
+        color: #0c25ff;
+    }
+
+    .pick i{
+        position: relative;
+        bottom: -17px;
+        left: 10px;
+        color: #f2f2f2;
+        /* width: 2 2; */
+        background-color: #0c25ff;
+        border-radius: 4px;
+        padding: 2px;
+    }
+
+    /* Page 4 Finishing  */
+
+    .page4{
+        position: relative;
+        /* hide page 3  */
+        /* display: none; */
+    }
+
+    .head4{
+        position: relative;
+        bottom: 680px;
+        left: 550px;
+    }
+
+    .head4 p{
+        position: relative;
+        left: -1px;
+    }
+
+    .head4 h4{
+        position: relative;
+        top: -30px;
+    }
+
+    .box1{
+        position: relative;
+        bottom: 700px;
+        left: 550px;
+        display: flex;
+        max-width: 355px;
+        background-color: #d5d6db;
+        border-radius: 7px;
+        border: 1px solid blue;
+    }
+
+    .box2{
+        position: relative;
+        bottom: 700px;
+        left: 550px;
+        display: flex;
+        max-width: 355px;
+        background-color: #d5d6db;
+        border-radius: 7px;
+        border: 1px solid blue;
+    }
+
+    .box3{
+        position: relative;
+        bottom: 700px;
+        left: 550px;
+        display: flex;
+        max-width: 355px;
+        background-color: #d5d6db;
+        border-radius: 7px;
+        border: 1px solid blue;
+    }
+
+    .result .box1{
+        margin-bottom: 15px;
+    }
+
+    .pick p{
+        position: relative;
+        top: 10px;
+    }
+
+    .box1 h4{
+        position: relative;
+        left: 195px;
+        color: #0c25ff;
+    }
+
+    .box1 p{
+        top: 10px;
+    }
+
+    .box2 p{
+        top: 10px;
+        font-weight: lighter;
+    }
+
+    .box1 i{
+        position: relative;
+        bottom: -17px;
+        left: 10px;
+        color: #f2f2f2;
+        /* width: 2 2; */
+        background-color: #0c25ff;
+        border-radius: 4px;
+        padding: 2px;
+    }
+
+    .box2{
+        padding-bottom: 55px;
+        margin-bottom: 10px;
+    }
+
+    .box2 h3{
+        position: relative;
+        right: 80px;
+        top: 29px;
+        color: black;
+    }
+
+    .box2 h4{
+        position: relative;
+        color: #0c25ff;
+        left: 148px;
+    }
+
+    .box2 i{
+        position: relative;
+        bottom: -17px;
+        left: 10px;
+        color: #f2f2f2;
+        background-color: #0c25ff;
+        border-radius: 4px;
+        padding: 2px;
+    }
+
+    .box3 p{
+        position: relative;
+        bottom: 50px;
+        left: 45px;
+        font-weight: lighter;
+    }
+
+    .box3 h4{
+        position: relative;
+        bottom: 70px;
+        left: 170px;
+        color: #0c25ff;
+    }
+
+    .box3 i{
+        position: relative;
+        bottom: -17px;
+        left: 10px;
+        color: #f2f2f2;
+        background-color: #0c25ff;
+        border-radius: 4px;
+        padding: 2px;
+    }
+
+    .box4 h3{
+        color: #000;
+        position: relative;
+        bottom: 750px;
+        left: 600px;
+        font-weight: bold;
+    }
+
+    .box4 h4{
+        color: #000;
+        position: relative;
+        bottom: 790px;
+        left: 810px;
+        font-weight: bold;
+    }
