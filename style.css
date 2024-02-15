@@ -2,10 +2,38 @@
 
 /* Style for the form */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.google.com/specimen/Ubuntu');
+
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Active & Hide All Screen  */
+
+.page1{
+    display: none;
+  }
+  .page2{
+    display: none;
+}
+.page3{
+    display: none;
+}
+.page4{
+    display: none;
+}
+.thank{
+    display: none;
+}
+
+
+
 
 *{
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400, 500, 700
 }
 
 h4{
@@ -31,18 +59,30 @@ p{
 
 form {
     position: relative;
-    top: 6rem;
+    bottom: 40px;
+    right: 35px;
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    padding-left: 14rem;
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
+    padding-left: 5rem;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 65vh;
-    justify-content: center;
-    display: none;
+    z-index: 1;
+  }
+
+  .formb{
+    position: relative;
+    left: 350px;
+    background-color: #007afd;
+    width: 85px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
   }
   
   /* Style for labels and input fields */
@@ -59,19 +99,22 @@ form {
     border-radius: 5px;
   }
   
+
+
   /* Style for Next button */
-  .btn {
-    background-color: #007BFF;
-    color: #fff;
+  .next {
+    background-color: #007afd;
+    width: 85px;
+    color: #ffffff;
     text-align: center;
     position: relative;
-    left: 295px;
-    padding: 10px 10px;
-    width: 22%;
+    top: 375px;
+    left: 420px;
+    padding: 10px;
     border: none;
+    font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
-    z-index: -1;
   }
 
   input[ type="number"]
@@ -96,7 +139,7 @@ form {
     background-repeat: no-repeat;
     height: 50vh;
     position: relative;
-    bottom: 350px;
+    bottom: 800px;
     left: 370px;
     height: 54vh;
     /* display: none; */
@@ -171,7 +214,8 @@ form {
     margin: 15px 0;
     /* justify-content: left; */
     /* hide */
-    display: none;
+    /* z-index: -1; */
+    /* display: none; */
 }
 
 .arcade :hover{
@@ -181,7 +225,7 @@ form {
 .arcade p{
     position: relative;
     top: 2px;
-    right: 599px;
+    /* right: 599px; */
     
 }
 
@@ -199,24 +243,20 @@ form {
 
 .box{
     display: flex;
-    /* flex-direction: row; */
-    width: 0;
-    justify-content: space-evenly;
+    width: 5px;
+    justify-content: space-between;
     width: 500px;
     cursor: pointer;
+    position: relative;
+    top: 25px;
+    right: 35px;
     /* hide  */
-    display: none;
+    /* display: none; */
 }
-
-/* .box .arcade{
-    height: 1vh;
-    justify-content: space-around;
-} */
 
 .plan{
     position: relative;
-    top: -290px;
-    bottom: 95px;
+    bottom: 295px;
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
@@ -237,24 +277,25 @@ form {
     z-index: 1;   
 }
 
-.btn{
-    display: contents;
-    
-}
-
-.plan h4{
+.box h4{
     position: relative;
     left: 25px;
-    top: 25px;
+    bottom: 75px;
     /* hide  */
-    display: none;
+    /* display: none; */
 }
 
 #pll{
     position: relative;
-    top: 25px;
+    bottom: 100px;
+    left: 120px;
     /* hide  */
-    display: none;
+    /* display: none; */
+}
+
+#pll1{
+    position: relative;
+    left: 85px;
 }
 
 /* .plan{
@@ -313,24 +354,11 @@ form {
     padding: 4px;
 }
 
-/* .box .arcade{
-    /* width: 180px;
-    text-align: center;
-    padding: 25px 15px;
-    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
-    border: 1px solid #73a24e;
-    border-radius: 4px;
-    margin: 15px 0; */
-
 
     /* end of page 2  */
 
     /* page 3  */
 
-    .page3{
-        /* hide page 3  */
-        display: none;
-    }
 
     .head3{
         position: relative;
@@ -391,12 +419,8 @@ form {
     }
 
     /* Page 4 Finishing  */
+    /* First possible result  */
 
-    .page4{
-        position: relative;
-        /* hide page 3  */
-        /* display: none; */
-    }
 
     .head4{
         position: relative;
@@ -414,9 +438,12 @@ form {
         top: -30px;
     }
 
+    /* box that display result plan  */
+
     .box1{
         position: relative;
         bottom: 700px;
+        padding-bottom: 75px;
         left: 550px;
         display: flex;
         max-width: 355px;
@@ -425,7 +452,8 @@ form {
         border: 1px solid blue;
     }
 
-    .box2{
+    /* box that display features  */
+    .thank_box{
         position: relative;
         bottom: 700px;
         left: 550px;
@@ -438,7 +466,7 @@ form {
 
     .box3{
         position: relative;
-        bottom: 700px;
+        bottom: 800px;
         left: 550px;
         display: flex;
         max-width: 355px;
@@ -466,7 +494,7 @@ form {
         top: 10px;
     }
 
-    .box2 p{
+    .thank_box p{
         top: 10px;
         font-weight: lighter;
     }
@@ -476,31 +504,30 @@ form {
         bottom: -17px;
         left: 10px;
         color: #f2f2f2;
-        /* width: 2 2; */
         background-color: #0c25ff;
         border-radius: 4px;
         padding: 2px;
     }
 
-    .box2{
+    .thank_box{
         padding-bottom: 55px;
         margin-bottom: 10px;
     }
 
-    .box2 h3{
+    .thank_box h3{
         position: relative;
         right: 80px;
         top: 29px;
         color: black;
     }
 
-    .box2 h4{
+    .thank_box h4{
         position: relative;
         color: #0c25ff;
         left: 148px;
     }
 
-    .box2 i{
+    .thank_box i{
         position: relative;
         bottom: -17px;
         left: 10px;
@@ -537,7 +564,7 @@ form {
     .box4 h3{
         color: #000;
         position: relative;
-        bottom: 750px;
+        bottom: 845px;
         left: 600px;
         font-weight: bold;
     }
@@ -545,7 +572,57 @@ form {
     .box4 h4{
         color: #000;
         position: relative;
-        bottom: 790px;
+        bottom: 885px;
         left: 810px;
         font-weight: bold;
     }
+
+
+    
+    /* Thanks Page  */
+
+
+    /* box that display features  */
+    .thank_box{
+        position: relative;
+        bottom: 650px;
+        left: 550px;
+        display: flex;
+        width: 455px;
+        background-color: #fefeff;
+        border-radius: 7px;
+        margin-left: 20px;
+    }
+
+    .thank_box p{
+        position: relative;
+        bottom: 20px;
+        width: 45px;
+        top: 59px;
+        left: 105px;
+        text-align: justify;
+        font-weight: bold;
+    }
+
+    .thank_box{
+        padding-bottom: 55px;
+        margin-bottom: 10px;
+    }
+
+    .thank_box h4{
+        position: relative;
+        left: -15px;
+        top: 60px;
+        color: #051f68;
+        margin-top: 40px;
+    }
+
+    .thank_box i{
+        position: relative;
+        left: 150px;
+        color: #f2f2f2;
+        background-color: #0c25ff;
+        border-radius: 50px;
+        padding: 15px;
+    }
+
