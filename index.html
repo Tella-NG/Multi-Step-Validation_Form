@@ -1,174 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Multi-step form</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/fd44c62ef1.js" crossorigin="anonymous"></script>
-</head>
-<body>
-      
-      <!-- info section  -->
-      <section class="info">
+   
+  </head>
+  <body>
 
-        <div class="one">
-            <h3 a href="#"><i class="fas fa-check"></i></a> STEP 1</h3>
-            <p>YOUR INFO</p>
+<!-- markup for the forms and side bar for selections -->
+    <div class="form">
+      <div class="form-cont">
+        <!-- info section -->
+        <div class="select-sidebar">
+          <div class="step active">
+            <div class="circle">1</div>
+            <div class="step-content">
+              <span>Step 1</span>
+              <b>Your info</b>
+            </div>
+          </div>
+          <!-- step2 begins here -->
+          <div class="step">
+            <div class="circle">2</div>
+            <div class="step-content">
+              <span>Step 2</span>
+              <b>Select plan</b>
+            </div>
+          </div>
+          <!-- step3 begins here -->
+          <div class="step">
+            <div class="circle">3</div>
+            <div class="step-content">
+              <span>Step 3</span>
+              <b>Add-ons</b>
+            </div>
+          </div>
+          <!-- step4 begins here -->
+          <div class="step">
+            <div class="circle">4</div>
+            <div class="step-content">
+              <span>Step 4</span>
+              <b>Summary</b>
+            </div>
+          </div>
         </div>
         
-        <div class="two">
-            <h3 a href="#"><i class="fas fa-times"></i></a> STEP 2</h3>
-            <P>SELECT PLAN</P>
+        <!--  Step 1 form and text starts here -->
+        <div class="stp step-1">
+          <div class="header">
+            <h1 class="title">Personal info</h1>
+            <p class="exp">
+              Please provide your name, email address, and phone number.
+            </p>
+          </div>
+          <form>
+            <div class="label">
+              <label for="name">Name</label>
+              <!-- error message to be displayed if name field isn't filled -->
+              <p class="error">Input a Valid name e.g Bola Ahmed Tinubu</p>
+            </div>
+            <input
+              required
+              type="text"
+              id="name"
+              placeholder="e.g. Bola Ahmed Tinubu"
+            />
+            <div class="label">
+              <!-- error message to be displayed if email field isn't filled -->
+              <label for="email">Email Address</label>
+              <p class="error">Input a valid email address e.g abc123@gmail.com</p>
+            </div>
+            <input
+              required
+              type="text"
+              id="email"
+              placeholder="e.g. abc123@gmail.com"
+            />
+            <div class="label">
+              <label for="phone">Phone Number</label>
+              <!-- error message to be displayed if Phone number field isn't filled -->
+              <p class="error">Input a valid phone number e.g +234 812 345 2567</p>
+            </div>
+            <input
+              required
+              type="tel"
+              id="phone"
+              placeholder="e.g. +234 812 345 2567"
+            />
+          </form>
+          <div class="btns">
+            <button class="next-stp" type="submit">Next Step</button>
+          </div>
         </div>
-        
-        <div class="three">
-            <h3 a href="#"><i class="fas fa-times"></i></a> STEP 3</h3>
-            <p>ADD-ONE</p>
+        <!-- this is the end of step 1 form and texts..... -->
+
+        <!--  the beginning of step2 plan card -->
+        <div class="stp step-2">
+          <div class="header">
+            <h1 class="title">Select your plan</h1>
+            <p class="exp">You have the option of monthly or yearly billing.</p>
+          </div>
+          <form>
+            <div class="plan-card selected">
+              <img src="./multi-step-form-main/image/icon-arcade.svg" alt="arcade" />
+              <div class="plan-info chosen">
+                <b>Arcade</b>
+                <span class="plan-price">$9/month</span>
+              </div>
+            </div>
+            <div class="plan-card">
+              <img src="./multi-step-form-main/image/icon-advanced.svg" alt="arcade" />
+              <div class="plan-info">
+                <b>Advanced</b>
+                <span class="plan-price">$12/month</span>
+              </div>
+            </div>
+            <div class="plan-card">
+              <img src="./multi-step-form-main/image/icon-pro.svg" alt="arcade" />
+              <div class="plan-info">
+                <b>Pro</b>
+                <span class="plan-price">$15/month</span>
+              </div>
+            </div>
+          </form>
+          <div class="switcher">
+            <p class="monthly sw-active">Monthly</p>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <p class="yearly">Yearly</p>
+          </div>
+          <div class="btns">
+            <button class="prev-stp" type="button">Go Back</button>
+            <button class="next-stp" type="submit">Next Step</button>
+          </div>
         </div>
-        
-        <div class="four">
-            <h3 a href="#"><i class="fas fa-times"></i></a> STEP 4</h3>
-            <p>SUMMARY</p>
+        <!-- this is the end of step 2 plan card -->
+
+        <!--  the beginning of step 3 pick add ons -->
+        <div class="stp step-3">
+          <div class="header">
+            <h1 class="title">Pick add-ons</h1>
+            <p class="exp">Add-ons help enhance your gaming experience.</p>
+          </div>
+          <form>
+            <div class="box" data-id="1">
+              <input type="checkbox" id="online" />
+              <div class="description">
+                <label for="online">Online service</label>
+                <small>Access to multiplayer games</small>
+                <p class="error">Kindly select an add on for a better  experience</p>
+              </div>
+              <p class="price">+$1/month</p>
+            </div>
+            <div class="box" data-id="2">
+              <input type="checkbox" id="larger" />
+              <div class="description">
+                <label for="larger">Larger storage</label>
+                <small>Extra 1TB of cloud save</small>
+              </div>
+              <p class="price">+$2/month</p>
+            </div>
+            <div class="box" data-id="3">
+              <input type="checkbox" id="profile" />
+              <div class="description">
+                <label for="profile">Customizable Profile</label>
+                <small>Custom theme on your profile</small>
+              </div>
+              <p class="price">+$2/month</p>
+            </div>
+          </form>
+          <div class="btns">
+            <button class="prev-stp" type="button">Go Back</button>
+            <button class="next-stp" type="submit">Next Step</button>
+          </div>
         </div>
-        </section> 
+        <!-- Step 3 add ons ends here -->
 
-        <!-- Plan Selection  -->
-<section class="plan">
- <!-- Page 1 (Form) -->
-    <form class="page1">
-        
-        <h2>Personal Info</h2>
-        <h4>Please provide your name, email address, and phone number.</h4>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="e.g Bola Hammed Tinubu"><br><br>
-    
-        <label for="email">Email Address</label>
-        <input type="text" id="email" name="email" placeholder="abc123@gmail.com"><br><br>
-    
-        <label for="phone">Phone No</label>
-        <input type="number" id="phone" name="phone" placeholder="e.g +234 812 3452 567">
-        <button class="formb"> Next Step </button>
-      </form>
-      <button class="next"> Next Step </button>
-
-    <p>...</p>
-    <div class="page2">
-    <h4 id="pll1">You have the option of monthly or yearly biling.</h4>
-    <div class="box">
-        <p id="pll">Select your plan</p>
-        <div class="arcade">
-            <a href="#"> <i class="fas fa-check"></i> </a> <br>
-            <p>Basic</p>
-            <h3>$20/mo</h3>
+        <!--  Step 4 finishing up page starts here -->
+        <div class="stp step-4">
+          <div class="header">
+            <h1 class="title">Finishing up</h1>
+            <p class="exp">
+              Double-check everything looks OK before confirming.
+            </p>
+          </div>
+          <div class="selection-box">
+            <div class="selection-container">
+              <div class="selected-plan">
+                <p class="plan-name">Arcade(Monthly)</p>
+                <p class="plan-price">$9/month</p>
+              </div>
+              <hr />
+              <div class="addons">
+                <template>
+                  <div class="selected-addon">
+                    <span class="service-name">Online serivice</span>
+                    <span class="servic-price">+$1/month</span>
+                  </div>
+                </template>
+              </div>
+            </div>
+            <p class="total">Total (per month) <b>+$12/month</b></p>
+          </div>
+          <div class="btns">
+            <button class="prev-stp" type="button">Go Back</button>
+            <button class="next-stp" type="submit">Next Step</button>
+          </div>
         </div>
+        <!-- Step 4 finishing up page ends here -->
 
-        <div class="arcade">
-            <a href="#"> <i class="fas fa-check"></i> </a> <br>
-            <p>Advance</p>
-            <h3>$50/mo</h3>
+        <!-- Step 5 thank you page startheres  -->
+        <div class="stp step-5">
+          <img src="./multi-step-form-main/image/icon-thank-you.svg" alt="" />
+          <div class="header">
+            <h1 class="title">Thank you!</h1>
+            <p class="exp">
+              Your Subscription has been received, welcome to our world and we hope you have fun
+              using our platform. Do well to 
+              reach out to us at codetitans@gmail.com in case you need help or support, we have a team of experts at your beck and call.
+            </p>
+          </div>
+          <button class="next-stp"></button>
         </div>
-
-        <div class="arcade">
-            <a href="#"> <i class="fas fa-check"></i> </a> <br>
-            <p>Pro</p>
-            <h3>$150/mo</h3>
-        </div>
-
-        <div class="switch">
-            <P>Monthly <i class="fas fa-toggle-on"> </i></P>
-            <h4>Yearly <i class="fas fa-toggle-off"> </i> </h4>
-        </div>
-
+      </div>
     </div>
-</div>
-    
-
-</section>
-
-<!-- page 4 finishing  -->
-
-<section class="page3">
-
-    <div class="head3">
-    <p>Pick add-ons</p>
-    <h4>Add-ons help enhance your gaming experience.</h4>
-</div>
-
-    <div class="picks">
-    <div class="pick">
-        <a href="#"> <i class="fas fa-check"></i> </a>
-        <p>Online Service</p>
-        <h3>Access to multiplayer games</h3>
-        <h4>+$1/mo</h4>
-    </div>
-
-    <div class="pick">
-        <a href="#"> <i class="fas fa-check"></i> </a>
-        <p>Larger Storage</p>
-        <h3>Extra 11TB of cloud Save</h3>
-        <h4>+$5/mo</h4>
-    </div>
-
-    <div class="pick">
-        <a href="#"> <i class="fas fa-check"></i> </a>
-        <p>Customizable </p>
-        <h3>Custom Theme on Your Profile</h3>
-        <h4>+$10/mo</h4>
-    </div>
-</div>
-
-</section>
-
-<section class="page4">
-
-    <div class="head4">
-    <p>Finishing Up</p>
-    <h4>Double-check everything looks OK before confirming.</h4>
-</div>
-
-    <div class="result">
-    <div class="box1">
-        <a href="#"> <i class="fas fa-check"></i> </a>
-        <p>Arcade</p>
-        <h4>+$9/mo</h4>
-    </div>
-
-    <div class="box2">
-        <a href="#"> <i class="fas fa-check"></i> </a>
-        <p>Larger Storage</p>
-        <h4>+$1/mo</h4>
-    </div>
-
-    <div class="box3">
-        <p>Customizable</p>
-        <h4>+$10/mo</h4>
-    </div>
-
-    <div class="box4">
-        <h3> Total (per month)</h3>
-        <h4>+$13/mo</h4>
-    </div>
-</div>
-
-</section>
-
-<!--  THANK YOU SCREEN   -->
-
-<section class="thank">
-
-
-    
-
-    <div class="thank_box">
-        <a href="#"> <i class="fas fa-check"></i> </a>
-        <p>Thank You!</p>
-        <h4>Thanks for confirming your subscription! we hope you have <br> fun using our platform. If you ever need support, please feel <br> free to email us at support@web3bridge.com</h4>
-    </div>
-
-</div>
-
-</section>
-
-</body>
+    <script src="./script.js" defer></script>
+  </body>
 </html>
